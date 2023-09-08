@@ -95,9 +95,10 @@ app.get("/api", (req, res) => {
   const currentDayOfWeek = currentDate.toLocaleDateString("en-US", {
     weekday: "long",
   });
-  const currentUTCTime = new Date(
-    currentDate.getTime() - currentDate.getTimezoneOffset() * 60000
-  ).toISOString();
+  const currentUTCTime =
+    new Date(currentDate.getTime() - currentDate.getTimezoneOffset() * 60000)
+      .toISOString()
+      .slice(0, 19) + "Z";
   const githubFileURL =
     "https://github.com/Peter-TMK/HNGx_BE1/blob/main/index.js";
   const githubRepoURL = "https://github.com/Peter-TMK/HNGx_BE1";
