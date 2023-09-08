@@ -61,6 +61,9 @@ app.get("/api", (req, res) => {
   //   console.log(new Date());
   //   console.log(currentDate);
   //   console.log(details.utc_time);
+  //   console.log(new Date());
+  //   console.log(Date.now());
+  //   console.log(Date.now());
   //   console.log(utc_time);
   //   console.log(details.utc_time);
   res.status(200).json(details);
