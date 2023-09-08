@@ -32,7 +32,7 @@ app.get("/api", (req, res) => {
   if (!slack_name || !track) {
     return res
       .status(400)
-      .json({ error: "Slack name and/or track not included!" });
+      .json({ error: "Slack name and/or track is/are not included!" });
   }
   console.log(details);
   res.status(200).json(details);
