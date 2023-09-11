@@ -1,7 +1,5 @@
 # HNGx_BE1
 
-# HNGx_BE1
-
 :dart: Objective
 Create and host an endpoint using any programming language of your choice.
 
